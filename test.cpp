@@ -4,6 +4,11 @@
 // Description: for source code test
 #include <iostream>
 
+struct Sales_data {
+        std::string isbn;
+        double prize;
+        int number; /* empty */
+    };  
 int main()
 {
     /* const pointer
@@ -34,4 +39,32 @@ int main()
     const int &const r2; // error: a reference must be initialized
     const int i2 = i, &r = i; // 
     */
+    /*
+    int i = 42, *p = &i, &r = i;
+    decltype(r + 0) b; // int
+    decltype(*p) c = i;
+    // decltpe's parameter is an lvalue, so decltype(i) is int, 
+    // decltype((variable)) is always a reference type
+    decltype((i)) d = i; // int&
+    decltype(i) e; // int
+    */
+   /*
+    int a = 3, b = 4;
+    decltype(a) c = a; // int
+    decltype((a)) d = a; // int&
+    ++c;
+    std::cout << c;
+    std::cout << d << std::endl;
+    ++d;
+    std::cout << a << c<<d <<std::endl;
+    */
+    /*      
+    Sales_data item = {"978-0590353403", 25.0, 15};
+    std::cin >> item.isbn >> item.prize >> item.number;
+    std::cout << "ISBN: " << item.isbn << std::endl;
+    std::cout << "Prize: " << item.prize << std::endl;
+    std::cout << "Number: " << item.number << std::endl;
+    */
+       
+    
 }
