@@ -7,6 +7,6 @@ int main() {
         /* code */
         result += s + " ";
     }
-    std::cout << result << std::endl;
+std::cout << result << std::endl;
     
 }
