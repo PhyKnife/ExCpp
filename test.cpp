@@ -65,6 +65,13 @@ int main()
     std::cout << "Prize: " << item.prize << std::endl;
     std::cout << "Number: " << item.number << std::endl;
     */
-       
-    
+    /*
+    std::string s("hello World!!!");
+    for (auto &c : s)
+    {
+        c = toupper(c);// toupper() will change the value of c to upper case
+    }
+    std::cout << s << std::endl;
+    */
+   
 }
