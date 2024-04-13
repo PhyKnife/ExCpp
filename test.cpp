@@ -3,7 +3,7 @@
 // Author: PhyKnife
 // Description: for source code test
 #include <iostream>
-
+#include <vector>
 struct Sales_data {
         std::string isbn;
         double prize;
@@ -73,5 +73,8 @@ int main()
     }
     std::cout << s << std::endl;
     */
-   
+    std::vector<int> ivec;
+    std::vector<Sales_data> SalesVec;
+    std::vector<std::vector<std::string>> file;
+
 }
